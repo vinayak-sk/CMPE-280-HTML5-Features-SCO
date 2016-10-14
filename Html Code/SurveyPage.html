@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="CMPE280 Assignment">
+    <meta name="author" content="Vinayk Kalaskar">
+
+    <title>Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <header>
+	  <div class="row heading">
+	    <h2> <p align="center"> <label class="title" align="center"> Quiz </label> </p> </h2>
+	  </div>
+  </header>
+
+  <div class="row">
+    <div class="container">
+    
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 block-2">
+        	<div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title" align="center">Survey</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                    	<p>How did you like the center?</p>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-2">
+                    		Comments:
+                    	</div>
+                    	<div class="col-md-10">
+                    		<input type="text" id="comments" name="comments" class="comments">
+                    	</div>
+                    </div>
+                    <div class="row">
+                    	<h4>Select Text Area Location:</h4>
+                    </div>
+                    <div class="row">
+                    	<div class="col-md-8">
+                    		<div class="col-md-2">
+                    			<p>City:</p>
+                    		</div>
+                    		<div class="col-md-4">
+                    			<input type="" name="city" list="cities">
+								<datalist id="cities">
+								  <option value="San Jose">
+								  <option value="San Francisco">
+								  <option value="Mountain View">
+								  <option value="Palo Alto">
+								  <option value="Sunnyvale">
+								  <option value="Los Angeles">
+								  <option value="Sacremento">
+								  <option value="Las Vegas">
+								  <option value="San Ramon">
+								</datalist>
+                    		</div>
+                    		<div class="col-md-2">
+                    			<p>Room Number#:</p>
+                    		</div>
+                    		<div class="col-md-4">
+                    			<input type="" name="room" list="rooms">
+								<datalist id="rooms">
+								  <option value="Room 200">
+								  <option value="Room 210">
+								  <option value="Room 220">
+								  <option value="Room 230">
+								  <option value="Room 240">
+								  <option value="Room 300">
+								  <option value="Room 310">
+								  <option value="Room 320">
+								  <option value="Room 330">
+								  <option value="Room 340">
+								  <option value="Room 400">
+								  <option value="Room 410">
+								  <option value="Room 420">
+								  <option value="Room 430">
+								  <option value="Room 440">
+								</datalist>
+							</div>
+                    	</div>
+                    </div>
+                    <br/><br/>
+                    <div class="row">
+		        		<button type="button" class="btn btn-primary btn-lg" id="getScore">Submit & Get Score</button>
+		        		<button type="button" class="btn btn-primary btn-lg" id="getScore">Skip & Get Score</button>
+		        	</div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+    </div> <!-- /container -->
+  </div>
+
+	<footer>
+	  <p>Developed by: Vinayak Kalaskar</p>
+	  <p>Contact information: <a href="mailto:vinayak1592@gmail.com">
+	  vinayak1592@gmail.com</a>.</p>
+	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <script type="text/javascript">
+  	var score = "";
+  	window.onload = function () {
+	    var url = document.location.href,
+	        params = url.split('?')[1].split('&'),
+	        data = {}, tmp;
+	    for (var i = 0, l = params.length; i < l; i++) {
+	         tmp = params[i].split('=');
+	         data[tmp[0]] = tmp[1];
+	    }
+	    score = data.points;
+	}
+	$( "#getScore" ).click(function(e) {
+        url = 'Summary.html?points=' + encodeURIComponent(score);
+    	document.location.href = url;
+	});
+  </script>
+  </body>
+</html>

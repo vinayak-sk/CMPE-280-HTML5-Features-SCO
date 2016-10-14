@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="CMPE280 Assignment">
+    <meta name="author" content="Vinayk Kalaskar">
+
+    <title>Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <header>
+	  <div class="row heading">
+	    <h2> <p align="center"> <label class="title" align="center"> Quiz </label> </p> </h2>
+	  </div>
+  </header>
+
+  <div class="row">
+    <div class="container">
+    
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 block-2">
+	        <form name="answers" action="">
+		          <!-- Nav tabs -->
+			        <ul class="nav nav-tabs tabs-heading" role="tablist" id="mytabs">
+			            <li role="presentation" class="active tab-titles"><a href="#question1" aria-controls="home" role="tab" data-toggle="tab">Question 1</a></li>
+			            <li role="presentation" class="tab-titles"><a href="#question2" aria-controls="profile" role="tab" data-toggle="tab">Question 2</a></li>
+			            <li role="presentation" class="tab-titles"><a href="#question3" aria-controls="messages" role="tab" data-toggle="tab">Question 3</a></li>
+			            <li role="presentation" class="tab-titles"><a href="#question4" aria-controls="messages" role="tab" data-toggle="tab">Question 4</a></li>
+			        </ul>
+
+		        <!-- Tab panes -->
+		        <div class="tab-content">
+		            <div role="tabpanel" class="tab-pane active" id="question1"> 
+		            	<div class="row">
+			            	<div class="col-md-8">
+			            		<div class="row">
+			            			<p>Given points (x1,y1) and (x2,y2) select the formula to find the equation of the given line</p>
+			            		</div>
+			            		<br/><br/><br/>
+					            <div class="row">
+					            	<div class="col-md-2 radio">
+					            		<input type="radio" name="answer1" value="0" data-answer-type="line">
+					            	</div>
+					            	<div class="col-md-4 equation">
+						            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+										   <mi>y</mi>
+										   <mo>=</mo>
+										   <mi>m</mi>
+										   <mi>x</mi>
+										   <mo>+</mo>
+										   <mi>b</mi>
+										</math>
+					            	</div>
+
+					            	<div class="col-md-2 radio">
+					            		<input type="radio" name="answer1" value="0" data-answer-type="line">
+					            	</div>
+					            	<div class="col-md-4 equation">
+					            		<math xmlns="http://www.w3.org/1998/Math/MathML">
+										   <msup>
+										      <mfenced>
+										         <mrow>
+										            <mi>x</mi>
+										            <mo>-</mo>
+										            <mi>h</mi>
+										         </mrow>
+										      </mfenced>
+										      <mn>2</mn>
+										   </msup>
+										   <mo>+</mo>
+										   <msup>
+										      <mfenced>
+										         <mrow>
+										            <mi>y</mi>
+										            <mo>-</mo>
+										            <mi>k</mi>
+										         </mrow>
+										      </mfenced>
+										      <mn>2</mn>
+										   </msup>
+										   <mo>=</mo>
+										   <msup>
+										      <mi>r</mi>
+										      <mn>2</mn>
+										   </msup>
+										</math>
+					            	</div>
+					            </div>
+					            <div class="row">
+					            	<div class="col-md-2 radio">
+					            		<input type="radio" name="answer1" value="0" data-answer-type="line">
+					            	</div>
+					            	<div class="col-md-4 equation">
+						            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+										   <mi>y</mi>
+										   <mo>-</mo>
+										   <msub>
+										      <mi>y</mi>
+										      <mn>1</mn>
+										   </msub>
+										   <mo>=</mo>
+										   <mi>m</mi>
+										   <mfenced>
+										      <mrow>
+										         <mi>x</mi>
+										         <mo>-</mo>
+										         <msub>
+										            <mi>x</mi>
+										            <mn>1</mn>
+										         </msub>
+										      </mrow>
+										   </mfenced>
+										</math>
+					            	</div>
+
+					            	<div class="col-md-2 radio">
+					            		<input type="radio" name="answer1" value="1" data-answer-type="line">
+					            	</div>
+					            	<div class="col-md-4 equation">
+						            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+										   <mi>y</mi>
+										   <mo>-</mo>
+										   <msub>
+										      <mi>y</mi>
+										      <mn>2</mn>
+										   </msub>
+										   <mo>=</mo>
+										   <mfrac>
+										      <mrow>
+										         <msub>
+										            <mi>y</mi>
+										            <mn>2</mn>
+										         </msub>
+										         <mo>-</mo>
+										         <msub>
+										            <mi>y</mi>
+										            <mn>1</mn>
+										         </msub>
+										      </mrow>
+										      <mrow>
+										         <msub>
+										            <mi>x</mi>
+										            <mn>2</mn>
+										         </msub>
+										         <mo>-</mo>
+										         <msub>
+										            <mi>x</mi>
+										            <mn>1</mn>
+										         </msub>
+										      </mrow>
+										   </mfrac>
+										   <mfenced>
+										      <mrow>
+										         <mi>x</mi>
+										         <mo>-</mo>
+										         <msub>
+										            <mi>x</mi>
+										            <mn>2</mn>
+										         </msub>
+										      </mrow>
+										   </mfenced>
+										</math>
+					            	</div>
+					            </div>
+					        </div>
+
+					        <div class="col-md-4">
+					        	<img src="image/line.png" alt="Line" style="width:200px;height:200px;">
+					        </div>
+				        </div>
+				        <div class="row">
+				        	<button type="button" class="btn btn-primary btn-lg" id="goTab2">Submit & Next Question</button>
+				        	<button type="button" class="btn btn-primary btn-lg" id="clear1">Cancel & Clear Selection</button>
+				        </div>
+					</div>
+
+		            <div role="tabpanel" class="tab-pane" id="question2">
+		            	<br/>
+		            	<div class="row">
+		            		<p>Select the Cosine formula</p>
+		            	</div>
+		            	<div class="row">
+				            	<div class="col-md-2 radio">
+				            		<input type="radio" name="answer2" value="1" data-answer-type="cosine">
+				            	</div>
+				            	<div class="col-md-5 equation">
+					            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+									   <mi>cos</mi>
+									   <mfenced>
+									      <mrow>
+									         <mi>&#x3B1;</mi>
+									         <mo>&#xB1;</mo>
+									         <mi>&#x3B2;</mi>
+									      </mrow>
+									   </mfenced>
+									   <mo>=</mo>
+									   <mi>cos</mi>
+									   <mi>&#x3B1;</mi>
+									   <mi>cos</mi>
+									   <mi>&#x3B2;</mi>
+									   <mo>&#x2213;</mo>
+									   <mi>sin</mi>
+									   <mi>&#x3B1;</mi>
+									   <mi>sin</mi>
+									   <mi>&#x3B2;</mi>
+									</math>
+				            	</div>
+
+				            	<div class="col-md-1 radio">
+				            		<input type="radio" name="answer2" value="0" data-answer-type="cosine">
+				            	</div>
+				            	<div class="col-md-4 equation">
+				            		<math xmlns="http://www.w3.org/1998/Math/MathML">
+									   <mi>sin</mi>
+									   <mfenced>
+									      <mrow>
+									         <mi>&#x3B1;</mi>
+									         <mo>&#xB1;</mo>
+									         <mi>&#x3B2;</mi>
+									      </mrow>
+									   </mfenced>
+									   <mo>=</mo>
+									   <mi>sin</mi>
+									   <mi>&#x3B1;</mi>
+									   <mi>cos</mi>
+									   <mi>&#x3B2;</mi>
+									   <mo>&#xB1;</mo>
+									   <mi>cos</mi>
+									   <mi>&#x3B1;</mi>
+									   <mi>sin</mi>
+									   <mi>&#x3B2;</mi>
+									</math>
+				            	</div>
+				        </div>
+				        <br/>
+				        <div class="row">
+				            	<div class="col-md-2 radio">
+				            		<input type="radio" name="answer2" value="0" data-answer-type="cosine">
+				            	</div>
+				            	<div class="col-md-5 equation">
+					            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+									   <mi>sin</mi>
+									   <mi>&#x3B1;</mi>
+									   <mo>+</mo>
+									   <mi>sin</mi>
+									   <mi>&#x3B2;</mi>
+									   <mo>=</mo>
+									   <mn>2</mn>
+									   <mi>sin</mi>
+									   <mfenced>
+									      <mfrac>
+									         <mrow>
+									            <mi>&#x3B1;</mi>
+									            <mo>+</mo>
+									            <mi>&#x3B2;</mi>
+									         </mrow>
+									         <mn>2</mn>
+									      </mfrac>
+									   </mfenced>
+									   <mi>cos</mi>
+									   <mfenced>
+									      <mfrac>
+									         <mrow>
+									            <mi>&#x3B1;</mi>
+									            <mo>-</mo>
+									            <mi>&#x3B2;</mi>
+									         </mrow>
+									         <mn>2</mn>
+									      </mfrac>
+									   </mfenced>
+									</math>
+				            	</div>
+
+				            	<div class="col-md-1 radio">
+				            		<input type="radio" name="answer2" value="0" data-answer-type="cosine">
+				            	</div>
+				            	<div class="col-md-4 equation">
+					            	<math xmlns="http://www.w3.org/1998/Math/MathML">
+									   <mi>sin</mi>
+									   <mi>&#x3B1;</mi>
+									   <mo>-</mo>
+									   <mi>sin</mi>
+									   <mi>&#x3B2;</mi>
+									   <mo>=</mo>
+									   <mn>2</mn>
+									   <mi>cos</mi>
+									   <mfenced>
+									      <mfrac>
+									         <mrow>
+									            <mi>&#x3B1;</mi>
+									            <mo>+</mo>
+									            <mi>&#x3B2;</mi>
+									         </mrow>
+									         <mn>2</mn>
+									      </mfrac>
+									   </mfenced>
+									   <mi>sin</mi>
+									   <mfenced>
+									      <mfrac>
+									         <mrow>
+									            <mi>&#x3B1;</mi>
+									            <mo>-</mo>
+									            <mi>&#x3B2;</mi>
+									         </mrow>
+									         <mn>2</mn>
+									      </mfrac>
+									   </mfenced>
+									</math>
+				            	</div>
+				        </div>
+				        <br/><br/><br/><br/><br/>
+				        <div class="row">
+				        	<button type="button" class="btn btn-primary btn-lg" id="goTab3">Submit & Next Question</button>
+				        	<button type="button" class="btn btn-primary btn-lg" id="clear2">Cancel & Clear Selection</button>
+				        </div>
+		            </div>
+
+		            <div role="tabpanel" class="tab-pane" id="question3">
+		            	<div class="row">
+			            	<div class="col-md-6">
+			            		<div class="row">
+			            			<p>As per the latest twitter news, complete the article snippet given by selecting the appropriate choices for the blanks.</p>
+			            		</div>
+			            		<div class="row">
+			            			<div class="col-md-6 markOption" id="markOption1">
+			            				<div class="row">
+			            					<input type="radio" name="answer31" value="1" data-answer-type="reading">Option 1 Mark 1: $650
+			            				</div>
+			            				<div class="row">
+			            					<input type="radio" name="answer31" value="0" data-answer-type="reading">Option 2 Mark 1: $550
+			            				</div>
+			            				<div class="row">
+			            					<input type="radio" name="answer31" value="0" data-answer-type="reading">Option 3 Mark 1: $750
+			            				</div>
+			            			</div>
+			            			<div class="col-md-6 markOption" id="markOption2">
+			            				<div class="row">
+			            					<input type="radio" name="answer32" value="1" data-answer-type="reading">Option 1 Mark2:Twitter
+			            				</div>
+			            				<div class="row">
+			            					<input type="radio" name="answer32" value="0" data-answer-type="reading">Option 2 Mark2:Google
+			            				</div>
+			            				<div class="row">
+			            					<input type="radio" name="answer32" value="0" data-answer-type="reading">Option 3 Mark2:Facebook
+			            				</div>
+			            			</div>
+			            		</div>
+			            	</div>
+			            	<div class="col-md-6">
+			            		<p>" <br/> Twitter wants more cash. The company announced two <mark id="mark1">$ ____</mark> million debt offerings in a filing today, each with a potential
+			            			$100 increase provided that he sales are over subscribed. Assuming full tip, including the $100 million boosters, <mark id="mark2">______</mark> will raise up to $1.5 billion with the two oferings. <br/> " <br/>
+
+			            			Source: <a href="http://techcrunch.com/2014/09/10/twitter-to-raise-up-to-1-5b-in-debt-offering/"> http://techcrunch.com/2014/09/10/twitter-to-raise-up-to-1-5b-in-debt-offering/ </a>
+			            		</p>
+			            	</div>
+		            	</div>
+		            	<div class="row">
+				        	<button type="button" class="btn btn-primary btn-lg" id="goTab4">Submit & Next Question</button>
+				        	<button type="button" class="btn btn-primary btn-lg" id="clear3">Cancel & Clear Selection</button>
+				        </div>
+		            </div>
+
+		            <div role="tabpanel" class="tab-pane" id="question4">
+		             	<div class="row">
+			            	<div class="col-md-6">
+			            		<div class="row">
+				            		<p>
+				            			Watch the following video and the following question.<br/>
+				            			What is the source as mentioned in the video?
+				            		</p>
+			            		</div>
+
+			            		<br/><br/><br/><br/>
+			            		<div class="row">
+					            	<div class="col-md-6 radio">
+					            		<input type="radio" name="answer4" value="1" data-answer-type="av">NASA.Gov
+					            	</div>
+
+					            	<div class="col-md-6 adjust">
+					            		<input type="radio" name="answer4" value="0" data-answer-type="av">Data.Gov
+					            	</div>
+					            </div>
+					            <div class="row">
+					            	<div class="col-md-6 radio">
+					            		<input type="radio" name="answer4" value="0" data-answer-type="av">Facebook
+					            	</div>
+
+					            	<div class="col-md-6 adjust">
+					            		<input type="radio" name="answer4" value="0" data-answer-type="av">XYZ.net
+					            	</div>
+					            </div>
+
+			            	</div>
+			            	<div class="col-md-6">
+			            			<iframe width="400" height="240" src="https://www.youtube.com/embed/gqXcXNUu1lg">
+									</iframe>
+			            			<!--video width="400" height="240" controls>
+									  <source src="https://www.youtube.com/embed/gqXcXNUu1lg">
+									  Your browser does not support the video tag.
+									</video-->
+									<p><h4>Expedition 40 Undocs Ending Mission</h4></p>
+									<p>Source: <a href="http://www.nasa.gov/multimedia/videogallery/index.html#.VBFB5S5dVOE">http://www.nasa.gov/multimedia/videogallery/index.html#.VBFB5S5dVOE</a></p>
+			            	</div>
+		            	</div>
+		            	<div class="row">
+				        	<button type="button" class="btn btn-primary btn-lg" id="goSurvey" onClick="goToSurvey()">Submit & Next Question</button>
+				        	<button type="button" class="btn btn-primary btn-lg" id="clear4">Cancel & Clear Selection</button>
+				        </div>
+		            </div>
+		        </div>
+		    </form>
+	    </div>
+
+        <div class="col-md-1">
+        </div>
+    </div> <!-- /container -->
+  </div>
+
+	<footer>
+	  <p>Developed by: Vinayak Kalaskar</p>
+	  <p>Contact information: <a href="mailto:vinayak1592@gmail.com">
+	  vinayak1592@gmail.com</a>.</p>
+	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>

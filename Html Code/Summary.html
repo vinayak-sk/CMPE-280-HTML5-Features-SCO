@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="CMPE280 Assignment">
+    <meta name="author" content="Vinayk Kalaskar">
+
+    <title>Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <header>
+	  <div class="row heading">
+	    <h2> <p align="center"> <label class="title" align="center"> Quiz </label> </p> </h2>
+	  </div>
+  </header>
+
+  <div class="row">
+    <div class="container">
+    
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10 block-2">
+                  <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title" align="center">Summary</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <details>
+                        <summary>Quantitative Section</summary>
+                          <p>Number of Questions Answered: 2</p>
+                          <p>Number of Correct Questions: <a id="quantScore"></a></p>
+                          <br/>
+                          <p>Score: <a id="quantScore1"></a></p>
+                      </details>
+                      <br/>
+                      <details>
+                        <summary>Reading Section</summary>
+                          <p>Number of Questions Answered: 2</p>
+                          <p>Number of Correct Questions: <a id="readingScore"></a></p>
+                          <br/>
+                          <p>Score: <a id="readingScore1"></a></p>
+                      </details>
+                      <br/>
+                      <details>
+                        <summary>Audio/Video Section</summary>
+                          <p>Number of Questions Answered: 1</p>
+                          <p>Number of Correct Questions: <a id="avScore"></a></p>
+                          <br/>
+                          <p>Score: <a id="avScore1"></a></p>
+                      </details>
+                    </div>  
+                    <div class="row" align="center">
+                      <h3>Thank You!!</h3>
+                    </div>
+                    <div class="row" align="center">
+                      <button type="button" class="btn btn-primary btn-lg" id="finish">Finish</button> 
+                    </div>
+                  </div>
+        </div>
+
+        <div class="col-md-1">
+        </div>
+    </div> <!-- /container -->
+  </div>
+
+	<footer>
+	  <p>Developed by: Vinayak Kalaskar</p>
+	  <p>Contact information: <a href="mailto:vinayak1592@gmail.com">
+	  vinayak1592@gmail.com</a>.</p>
+	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  <script type="text/javascript" src="js/summary.js"></script>
+  </body>
+</html>
